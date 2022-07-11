@@ -1,0 +1,11 @@
+
+.side-menu {
+  display: inline-block;
+  width: 20rem;
+  height: 100%;
+
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}

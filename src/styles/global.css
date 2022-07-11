@@ -1,0 +1,16 @@
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: 
+    linear-gradient(to right, #000a, #000a),
+    url('@images/background3.jpg');
+  background-position: center, center;
+  background-size: cover, cover;
+  background-blend-mode: normal;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
