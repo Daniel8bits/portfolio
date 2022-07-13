@@ -1,6 +1,12 @@
 
+@import '@styles/mixins';
+
+@import '@components/avatar/avatar';
 @import '@components/sideMenu/side-menu';
 @import '@components/sideMenu/menu-button';
 
 @import '@layouts/mainLayout/main-layout';
 @import '@layouts/contentPanel/content-panel';
+@import '@layouts/grid/grid';
+
+@import '@pages/home/home';

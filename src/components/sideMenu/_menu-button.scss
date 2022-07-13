@@ -9,11 +9,11 @@
     width: 130%;
     height: 7rem;
     box-sizing: border-box;
-    border: .35rem solid #2b3853;
-    box-shadow: 0 0 3px black inset;
-    background-image: linear-gradient(60deg, #000103a3, #1009159e);
+    
     transform: translate(-3rem, 0px);
     transition: all .25s;
+
+    @include colorTheme();
 
     font-size: 1.5rem;
     color: white;
