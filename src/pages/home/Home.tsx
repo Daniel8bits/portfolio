@@ -33,7 +33,7 @@ const Home: React.FC<HomeProps> = () => {
               and have tons of experience in programming got from some private projects.
             </p>
             <p>
-              The technologies I know are: C, C++, Java, Javascript, NodeJS, PostgreSQL, 
+              The technologies I know are: C, C++, Java, Javascript, NodeJS, PostgreSQL, StackOverflow, 
               OpenGL, GLSL, Blender and how to use a coffee machine which, everyone knows, is the purpose of a CS degree.
             </p>
           </Column>
