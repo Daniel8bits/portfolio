@@ -3,7 +3,6 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: 'Bebas Neue';
 }
 
 body {
@@ -13,9 +12,21 @@ body {
   background-position: center, center;
   background-size: cover, cover;
   background-blend-mode: normal;
+  font-family: 'Bebas Neue';
 }
 
+p {
+  font-family: 'Times New Roman', Times, serif;
+  padding-bottom: 1rem;
+}
 
+a {
+  color: yellow;
+}
+
+a:hover {
+  text-decoration: underline;
+}
 
 /*=======================
         HEADERS
