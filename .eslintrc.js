@@ -51,7 +51,8 @@ module.exports = {
       'react/function-component-definition': 'off',
       'react/destructuring-assignment': 'off',
       'react/require-default-props': 'off',
-      'no-plusplus': 'off'
+      'no-plusplus': 'off',
+      'jsx-a11y/control-has-associated-label': 'off'
     },
     settings: {
       'import/parsers': {

@@ -5,6 +5,7 @@ import App from './App';
 
 import 'tailwindcss/tailwind.css';
 import 'simplebar/dist/simplebar.min.css';
+import 'react-lite-youtube-embed/dist/LiteYouTubeEmbed.css'
 import '@styles/global.css'
 import '@styles/custom.scss'
 import '@styles/main.scss'

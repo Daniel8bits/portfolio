@@ -20,3 +20,23 @@
 @include generateGridMedia('.xl', 1280px);
 /*xxl*/
 @include generateGridMedia('.\\32xl', 1536px);
+
+
+/*====================
+        SCROLL
+====================*/
+.simplebar-track {
+
+    .simplebar-scrollbar.simplebar-visible {
+
+        &::before {
+
+            width: .35rem;
+            border-radius: 0;
+            opacity: 1;
+            background-color: #2b3853;
+
+        }
+    }
+
+}

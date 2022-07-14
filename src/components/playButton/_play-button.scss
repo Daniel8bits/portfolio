@@ -1,0 +1,23 @@
+
+.play-button {
+
+  display: flex;
+  align-items: center;
+  padding: .5rem 1rem;
+  width: 100%;
+  font-size: 1.5rem;
+
+  background-image: linear-gradient(60deg, rgb(24, 70, 3), rgb(28, 100, 28));
+  border: .15rem solid rgb(52, 160, 3);//#040;
+  color: white;
+
+  &:hover {
+    background-image: linear-gradient(60deg, rgb(39, 114, 5), rgb(42, 146, 42));
+    border-color: rgb(65, 197, 4);
+  }
+
+  svg {
+    margin-right: 1rem;
+  }
+
+}

@@ -4,9 +4,13 @@
 @import '@components/avatar/avatar';
 @import '@components/sideMenu/side-menu';
 @import '@components/sideMenu/menu-button';
+@import '@components/specialMention/special-mention';
+@import '@components/playButton/play-button';
+@import '@components/githubButton/github-button';
 
 @import '@layouts/mainLayout/main-layout';
 @import '@layouts/contentPanel/content-panel';
 @import '@layouts/grid/grid';
 
 @import '@pages/home/home';
+@import '@pages/game/game';

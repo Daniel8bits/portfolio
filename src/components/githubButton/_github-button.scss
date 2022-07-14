@@ -1,0 +1,22 @@
+
+.github-button {
+
+  display: flex;
+  align-items: center;
+  padding: .5rem 1rem;
+  width: 100%;
+  font-size: 1.5rem;
+
+  @include colorTheme();
+  color: white;
+  border-width: .15rem;
+
+  &:hover {
+    border-color: #84adffa3;
+  }
+
+  svg {
+    margin-right: 1rem;
+  }
+
+}

@@ -47,10 +47,11 @@ const Home: React.FC<HomeProps> = () => {
           </Column>
         </Row>
         <Row>
-          <Column>
+          <Column className='contacts'>
             <p>
               <b>Phone: </b> +55 (53) 999471840
-              <br />
+            </p>
+            <p>
               <b>Email: </b> daniel.sftm@outlook.com
             </p>
           </Column>

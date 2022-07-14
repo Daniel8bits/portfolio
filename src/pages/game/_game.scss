@@ -1,0 +1,17 @@
+
+.game {
+
+  h1 {
+    font-family: 'Courier New', Courier, monospace;
+
+    i {
+      text-decoration: line-through;
+      font-size: 1rem;
+    }
+  }
+
+  img, article {
+    @include colorTheme();
+  }
+
+}

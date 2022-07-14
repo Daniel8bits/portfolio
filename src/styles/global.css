@@ -17,6 +17,9 @@ body {
 
 p {
   font-family: 'Times New Roman', Times, serif;
+  text-indent: 1rem;
+  line-height: 1.75rem;
+  text-align: justify;
   padding-bottom: 1rem;
 }
 
