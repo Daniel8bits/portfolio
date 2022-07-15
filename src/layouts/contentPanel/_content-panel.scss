@@ -3,12 +3,23 @@
 
   display: flex;
   flex-wrap: wrap;
-
   width: auto;
-  margin: 1rem 3rem 1rem 5rem;
-  padding: 3rem 2rem;
 
   @include colorTheme();
   color: white;
   
+}
+
+@media (min-width: 801px) {
+  .content-panel {
+    padding: 3rem 2rem;
+    margin: 1rem 3rem 1rem 5rem;
+  }
+}
+
+@media (max-width: 800px) {
+  .content-panel {
+    padding: 3rem 0;
+    margin: 0 1rem 4rem 1rem;
+  }
 }

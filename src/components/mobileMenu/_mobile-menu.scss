@@ -1,0 +1,36 @@
+
+.mobile-menu {
+  display: flex;
+  justify-content: flex-end;
+  align-self: center;
+  height: 5rem;
+  color: white;
+  
+  > button {
+    width: 7rem;
+    margin: 1rem 0;
+    padding: 1rem;
+    font-size: 2rem;
+
+    @include colorTheme();
+
+    transition: all cubic-bezier(0.39, 0.575, 0.565, 1);
+    transform: translate(2rem);
+
+    &:hover {
+      transform: translate(0);
+    }
+  }
+
+  > div.menu {
+    position: fixed;
+    z-index: 9999;
+    width: 100vw;
+    height: 100vh;
+    background-color: #000a;
+
+    &:not(.open) {
+      display: none;
+    }
+  }
+}

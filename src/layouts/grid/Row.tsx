@@ -6,7 +6,7 @@ interface RowProps {
 
 const Row: React.FC<RowProps> = (props) => {
   return (
-    <div className={`row ${props.className}`}>
+    <div className={`row ${props.className ?? ''}`}>
       {props.children}
     </div>
   );

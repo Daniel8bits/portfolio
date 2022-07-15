@@ -11,6 +11,7 @@ interface HomeProps {
 }
 
 const Home: React.FC<HomeProps> = () => {
+  window.document.title = 'Daniel Oliveira'
   return (
     <MainLayout className='home'>
       <ContentPanel>
@@ -20,7 +21,7 @@ const Home: React.FC<HomeProps> = () => {
           </Column>
         </Row>
         <Row>
-          <Column sm={4} lg={4} xl={7}> 
+          <Column lg={7} xl={7}> 
             <h1> Daniel Noguês de Oliveira </h1> 
             <br  />
             <p>
@@ -37,7 +38,7 @@ const Home: React.FC<HomeProps> = () => {
               OpenGL, GLSL, Blender and how to use a coffee machine which, everyone knows, is the purpose of a CS degree.
             </p>
           </Column>
-          <Column sm={4} lg={4} xl={5}> 
+          <Column lg={5} xl={5}> 
             <Avatar  /> 
           </Column>
         </Row>

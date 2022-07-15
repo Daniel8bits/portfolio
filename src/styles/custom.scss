@@ -1,17 +1,28 @@
 @use "sass:math";
 
 /* Grid Medias */
-@mixin generateGridMedia($class, $minWidth) {
-  @for $i from 1 through 12 {
-      @media (min-width: $minWidth) {
-          #{$class}\:w-#{$i}\/12 {
-              width: (math.div(100, 12) * $i) * 1%;
-          }
-      }
-  }
+@mixin generateGridMedia($class, $minWidth, $max: false) {
+    @if $max {
+        @for $i from 1 through 12 {
+            @media (max-width: $minWidth) {
+                #{$class}\:w-#{$i}\/12 {
+                    width: (math.div(100, 12) * $i) * 1%;
+                }
+            }
+        }
+    } @else {
+        @for $i from 1 through 12 {
+            @media (min-width: $minWidth) {
+                #{$class}\:w-#{$i}\/12 {
+                    width: (math.div(100, 12) * $i) * 1%;
+                }
+            }
+        }
+    }
 }
 /*sm*/
-@include generateGridMedia('.sm', 640px);
+//@include generateGridMedia('.sm', 640px);
+@include generateGridMedia('.sm', 768px, true);
 /*md*/
 @include generateGridMedia('.md', 768px);
 /*lg*/
@@ -23,20 +34,20 @@
 
 
 /*====================
-        SCROLL
+SCROLL
 ====================*/
 .simplebar-track {
-
+    
     .simplebar-scrollbar.simplebar-visible {
-
+        
         &::before {
-
+            
             width: .35rem;
             border-radius: 0;
             opacity: 1;
             background-color: #2b3853;
-
+            
         }
     }
-
+    
 }

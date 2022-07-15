@@ -15,6 +15,7 @@ interface GameProps {
 }
 
 const Game: React.FC<GameProps> = () => {
+  window.document.title = 'My Game'
   return (
     <MainLayout className='game'>
       <ContentPanel>
@@ -28,7 +29,7 @@ const Game: React.FC<GameProps> = () => {
             <h1> The <i>nameless</i> horror game </h1>
           </Column>
           <Column xl={3}>
-            <PlayButton to='/'  />
+            <PlayButton to='https://horrorgame.danieloliveira.me'  />
           </Column>
         </Row>
         <Row>
@@ -64,7 +65,7 @@ const Game: React.FC<GameProps> = () => {
         </Row>
         <Row>
           <Column xl={3}>
-            <PlayButton to='/'  />
+            <PlayButton to='https://horrorgame.danieloliveira.me'  />
           </Column>
           <Column xl={3}>
             <GithubButton to='https://github.com/Daniel8bits/cg-game'  />

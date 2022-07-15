@@ -52,7 +52,8 @@ module.exports = {
       'react/destructuring-assignment': 'off',
       'react/require-default-props': 'off',
       'no-plusplus': 'off',
-      'jsx-a11y/control-has-associated-label': 'off'
+      'jsx-a11y/control-has-associated-label': 'off',
+      'jsx-a11y/click-events-have-key-events': 'off'
     },
     settings: {
       'import/parsers': {
