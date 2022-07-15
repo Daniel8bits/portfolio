@@ -76,9 +76,11 @@ const Game: React.FC<GameProps> = () => {
             <h2> SOME OBSERVATIONS </h2>
           </Column>
         </Row>
-        <Row>
+        <Row className='observations'>
           <Column>
             <p>
+              In the first access, the game can stop responding for a moment when you enter the main menu
+              after the loading, it happens because of the assets creation <i>I guess</i>.
               Once the page has loaded, make sure you clicked the canvas to focus on, otherwise
               you will not be able to control the game.
               You can see the game controls in the instructions menu. 

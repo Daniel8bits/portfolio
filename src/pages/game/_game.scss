@@ -14,4 +14,11 @@
     @include colorTheme();
   }
 
+  .observations i {
+    text-decoration: line-through;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
 }
