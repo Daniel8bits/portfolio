@@ -47,7 +47,7 @@ const Game: React.FC<GameProps> = () => {
             <p>
               This was a game that I and my teammate made as a college computer graphics work. 
               The game design as well as the level design and modeling were made by me.
-              The programming part, that was the most funny, was made by both of us.
+              The programming part, that was the most fun, was made by both of us.
             </p>
             <p>
               The idea was making a game inspired on Doom but with its own identity and feeling.

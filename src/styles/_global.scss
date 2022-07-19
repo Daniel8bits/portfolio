@@ -8,7 +8,7 @@
 body {
   background-image: 
     linear-gradient(to right, #000a, #000a),
-    url('@images/background3.jpg');
+    url('../images/background3.jpg');
   background-position: center, center;
   background-size: cover, cover;
   background-blend-mode: normal;
@@ -22,14 +22,24 @@ p {
   line-height: 1.75rem;
   text-align: justify;
   padding-bottom: 1rem;
+
+  > i {
+    text-decoration: line-through;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
 }
 
 a {
   color: yellow;
+  &:hover {
+    text-decoration: underline;
+  }
 }
 
-a:hover {
-  text-decoration: underline;
+img {
+  @include colorTheme();
 }
 
 /*=======================
