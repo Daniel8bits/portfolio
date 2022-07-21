@@ -1,0 +1,43 @@
+
+.image-group {
+  display: flex;
+  flex-wrap: wrap;
+  
+  > * {
+    width: 100%;
+  }
+
+  > div {
+    
+    @include colorTheme();
+    border-top: none;
+    height: 4.5rem;
+
+    .simplebar-content {
+
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+
+      > img {
+        display: inline-block;
+        height: 4rem;
+        transition: all .25s;
+        margin: 1px;
+        box-shadow: 0 0 4px black;
+  
+        &:hover {
+          border-color: #5770a7;
+          cursor: pointer;
+        }
+
+        &.current {
+          border-color: white;
+        }
+
+      }
+
+    }
+  }
+}

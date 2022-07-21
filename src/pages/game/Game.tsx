@@ -4,11 +4,16 @@ import Row from '@layouts/grid/Row';
 import MainLayout from '@layouts/mainLayout/MainLayout';
 import React from 'react';
 
-import LevelDesignSketch from '@images/level-design-sketch.png'
+import LevelDesignSketchPNG from '@images/level-design-sketch.png'
+import Modeling1PNG from '@images/modeling1.png'
+import Modeling2PNG from '@images/modeling2.png'
+import Modeling3PNG from '@images/modeling3.png'
+
 import SpecialMention from '@components/specialMention/SpecialMention';
 import LiteYouTubeEmbed from 'react-lite-youtube-embed';
 import PlayButton from '@components/playButton/PlayButton';
 import GithubButton from '@components/githubButton/GithubButton';
+import ImageGroup from '@components/imageGroup/ImageGroup';
 
 interface GameProps {
   
@@ -43,7 +48,7 @@ const Game: React.FC<GameProps> = () => {
           </Column>
         </Row>
         <Row>
-          <Column xl={6}>
+          <Column>
             <p>
               This was a game that I and my teammate made as a college computer graphics work. 
               The game design as well as the level design and modeling were made by me.
@@ -59,9 +64,6 @@ const Game: React.FC<GameProps> = () => {
               for each action. Also, if the monster doesn&apos;t have legs, you don&apos;t need to animate them, right? :D
             </p>
           </Column>
-          <Column xl={6}>
-            <img src={LevelDesignSketch} alt="level design sketch" />
-          </Column>
         </Row>
         <Row>
           <Column xl={3}>
@@ -76,7 +78,7 @@ const Game: React.FC<GameProps> = () => {
             <h2> SOME OBSERVATIONS </h2>
           </Column>
         </Row>
-        <Row className='observations'>
+        <Row>
           <Column>
             <p>
               In the first access, the game can stop responding for a moment when you enter the main menu
@@ -88,6 +90,87 @@ const Game: React.FC<GameProps> = () => {
             </p>
             <p className='text-yellow-400 font-bold'>
               The assets credits are on the game and can be accessed from the main menu.
+            </p>
+          </Column>
+        </Row>
+        <Row>
+          <Column>
+            <h2> TECHNICAL ASPECTS </h2>
+          </Column>
+        </Row>
+        <Row>
+          <Column xl={6}>
+            <p>
+              In the beginning I didn&apos;t know from where to start, everything I had was the idea of making
+              a game with Doom mechanics and that could resemble the unconfortable horror atmosphere from
+              Purgatory 2 which is actually my favorite kind of horror technique.
+              So I started making the level concept, the game objective had to be simple, the character 
+              just starts somewhere, go through an obscure factory-like labyrinth filled with obstacles
+              and monsters and then reaches the final point trying not to die middle way.
+              To have a better image in my mind, I drew a level design sketch
+              saying where the character starts, where has to reach and how the main obstacles
+              would be distributed through the labyrinth.
+              With this, I was able to go to the next step: modeling.
+            </p>
+          </Column>
+          <Column xl={6}>
+            <img src={LevelDesignSketchPNG} alt="level design sketch" />
+            <small> Green: the panels </small>
+            <br />
+            <small> Purple: monsters </small>
+            <br />
+            <small> Blue: area with door panels </small>
+          </Column>
+        </Row>
+        <Row>
+          <Column xl={6}>
+            <ImageGroup
+              images={[
+                {src: Modeling1PNG, alt:"hexagon hall"},
+                {src: Modeling2PNG, alt:"hexagon hall texture UV mapping"},
+                {src: Modeling3PNG, alt:"door panel"}
+              ]}
+            />
+          </Column>
+          <Column xl={6}>
+            <p>
+              To me, the modeling part was a bit boring and hard to maintain a good workflow, but soon
+              I managed to understand how the models should be handled and exported to the game
+              without lose the original editable mesh and at the same time exporting a suitable mesh for
+              rendering in game which basically consisted in being triangulated and the normal 
+              vectors well calculated.
+              Once I figured out a good work pipeline, everything started going fast: models the mesh,
+              creates the texture, maps the texture, duplicates the mesh to prepare 
+              the copy to be exported while maintain the original one preserved, triangulates the copy, 
+              recalculates the normals and exports as OBJ file: The object was ready to be loaded.
+            </p>
+            <p>
+              I also have a bit of skills with drawing, but due to time I choose to take some pre made
+              textures from internet and assemble them to create the textures for the map.
+              I tried to find something good for the monsters, but I coudn&apos;t, so I drew the sprite 
+              myself on Krita.
+            </p>
+          </Column>
+        </Row>
+        <Row>
+          <Column>
+            <p>
+              The techniques used are listed down below
+            </p>
+            <ul>
+              <li> Phong illumination </li>
+              <li> Basic physics engine that works for dynamic and static entities</li>
+              <li> Bloom postprocess effect </li>
+              <li> Basic gun slider animation when shooting </li>
+              <li> Fading in and out postprocess when changing between scenes </li>
+              <li> Mask filtering on door panel displays </li>
+              <li> Door opening cutscenes </li>
+              <li> Pathfinding implementation using A* algorithm </li>
+              <li> Text rendering </li>
+              <li> HUD and GUI rendering using orthographic projection </li>
+            </ul>
+            <p>
+
             </p>
           </Column>
         </Row>

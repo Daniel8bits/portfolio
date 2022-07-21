@@ -38,6 +38,21 @@ a {
   }
 }
 
+ul {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 1.15rem;
+  list-style-type: square;
+  margin-left: 1rem;
+  margin-bottom: 1rem;
+  li {
+    margin: 1rem 0;
+  }
+}
+
+small {
+  font-family: 'Courier New', Courier, monospace;
+}
+
 img {
   @include colorTheme();
 }
